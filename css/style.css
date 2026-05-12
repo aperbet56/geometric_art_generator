@@ -1,0 +1,139 @@
+/**** Reset ****/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    outline: none;
+    border: none;
+    font-weight: "Josefin Sans", sans-serif;
+}
+
+/**** body ****/
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Alata", sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #fffffe;
+    color: #0f0e17;
+}
+
+/**** header, footer ****/
+
+header,
+footer {
+    padding: 20px 16px;
+}
+
+/**** header ****/
+
+.main__title {
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/**** main ****/
+
+.main__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/***** div container ****/
+
+.container {
+    background-color: #0f0e17;
+    height: calc(15vmin * 5);
+    width: calc(15vmin * 4);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 16px;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 8px rgba(60, 64, 67, 0.25);
+}
+
+.container div {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.btn {
+    width: calc(15vmin * 4);
+    margin-block: 40px;
+    background-color: #ff8906;
+    padding: 18px 0;
+    color: #fffffe;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 8px rgba(60, 64, 67, 0.25);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28)
+}
+
+.quad__circle-1 {
+    clip-path: circle(100% at 0 0);
+}
+
+.quad__circle-2 {
+    clip-path: circle(100% at 100% 0);
+}
+
+.quad__circle-3 {
+    clip-path: circle(100% at 100% 100%);
+}
+
+.quad__circle-4 {
+    clip-path: circle(100% at 0 100%);
+}
+
+.triangle-1 {
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+.triangle-2 {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%);
+}
+
+.triangle-3 {
+    clip-path: polygon(0 100%, 100% 0%, 100% 100%);
+}
+
+.triangle-4 {
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+/**** footer ****/
+
+.copyright {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+}
