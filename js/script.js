@@ -1,6 +1,7 @@
 // Récupération des éléments HTML5
 const btn = document.querySelector(".btn");
 const boxes = document.querySelectorAll(".container div");
+const year = document.querySelector(".year");
 
 // Création des constantes shapes et colors
 const shapes = [
@@ -35,3 +36,10 @@ const generatePattern = () => {
 // Ecouteurs d'événement et appel de la foncion generatePattern
 btn.addEventListener("click", generatePattern);
 window.addEventListener("load", generatePattern);
+
+// Récupération de la date actuelle et de l'année en cours
+const today = new Date();
+const currentYear = today.getFullYear();
+
+// Affichage dynamique de l'année en cours
+year.textContent = `${currentYear}`;
