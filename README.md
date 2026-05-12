@@ -1,5 +1,7 @@
 ## GEOMETRIC ART GENERATOR
 
+![preview](img/preview.png)
+
 ## Le challenge
 
 Création du projet : Geometric Art Generator en HTML5, CSS3 et JavaScript.
